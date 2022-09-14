@@ -1,0 +1,26 @@
+{
+  "name": "webautotest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "yarn cypress run",
+    "debug": "yarn cypress open",
+    "start": "node server.js",
+    "test": "START_SERVER_AND_TEST_INSECURE=1 start-server-and-test start https-get://localhost:3100 cy:run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.29.0",
+    "cypress": "^10.5.0",
+    "cypress-grep": "^3.0.2",
+    "mochawesome": "^7.1.3",
+    "start-server-and-test": "^1.14.0"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.18.1",
+    "cypress-tags": "^1.0.0",
+    "yarn": "^1.22.19"
+  }
+}
