@@ -17,12 +17,12 @@ module.exports = defineConfig({
   //   html:true,
   //   json:true
   // },
-  // reporter: "junit",
-  // reporterOptions: {
-  //   mochaFile: "results/test_report_[hash].xml",
-  //   toConsole: true,
-  //   overwrite:false,
-  // },
+  reporter: "junit",
+  reporterOptions: {
+    mochaFile: "../cypress run/allure-results/test_report_[hash].xml",
+    toConsole: true,
+    overwrite:false,
+  },
 
   setupNodeEvents(on, config) {
     allureWriter(on, config);
