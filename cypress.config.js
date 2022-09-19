@@ -19,7 +19,7 @@ module.exports = defineConfig({
   // },
   reporter: "junit",
   reporterOptions: {
-    mochaFile: "results/test_report_[hash].xml",
+    mochaFile: "allure-results/test_report_[hash].xml",
     toConsole: true,
     overwrite:false,
   },
