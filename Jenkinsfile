@@ -16,6 +16,7 @@ pipeline{
 }
 post {
   always {
+    allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
     junit 'allure-results/*.xml'
     emailext body: '''<!DOCTYPE html>
 <html lang="en">
