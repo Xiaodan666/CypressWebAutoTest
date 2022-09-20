@@ -5,7 +5,7 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://localhost:3100",
   },
-  projectId: "jeo46q",
+  projectId: "2e9y78",
   env: {
     login_url: "https://localhost:3100/#/login",
   },
