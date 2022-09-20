@@ -9,7 +9,7 @@ pipeline{
             //install node modules
             bat 'yarn install'
             //run testcases
-            bat 'npx cypress run --record --key 6144d4a6-58a4-4e3b-99ff-85c93a6c43d8'
+            bat 'npx cypress run --record --key 6144d4a6-58a4-4e3b-99ff-85c93a6c43d8 --parallel'
             }
         }
 
